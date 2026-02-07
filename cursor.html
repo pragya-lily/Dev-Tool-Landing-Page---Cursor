@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cursor Landing Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+      }
+
+      body {
+        background: #000;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 1100px;
+        margin: auto;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+      h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+
+      p {
+        color: #b3b3b3;
+      }
+
+      /* NAVBAR */
+      header {
+        border-bottom: 1px solid #1a1a1a;
+        position: sticky;
+        top: 0;
+        background: #000;
+      }
+
+      .nav {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 34px;
+      }
+
+      .links {
+        display: flex;
+        gap: 30px;
+        color: #b3b3b3;
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid #333;
+      }
+
+      .primary {
+        background: #fff;
+        color: #000;
+        border: none;
+      }
+
+      /* HERO */
+      .hero {
+        text-align: center;
+      }
+
+      .hero p {
+        width: 600px;
+        margin: 20px auto 40px;
+      }
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 70px;
+      }
+
+      .preview {
+        border: 1px solid #222;
+        border-radius: 12px;
+        padding: 8px;
+      }
+
+      .preview img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* TRUSTED */
+      .trusted {
+        border-top: 1px solid #111;
+        border-bottom: 1px solid #111;
+        text-align: center;
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 30px;
+      }
+
+      .logos img {
+        height: 28px;
+        opacity: 0.7;
+      }
+
+      /* FEATURES */
+      .feature {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+      }
+
+      .reverse {
+        flex-direction: row-reverse;
+      }
+
+      .visual img {
+        width: 520px;
+        border-radius: 16px;
+        border: 1px solid #222;
+      }
+
+      /* CARDS */
+      .cards {
+        display: flex;
+        gap: 20px;
+      }
+
+      .card {
+        flex: 1;
+        background: #0a0a0a;
+        border: 1px solid #222;
+        padding: 30px;
+        border-radius: 14px;
+      }
+
+      /* TESTIMONIALS */
+      .testimonials {
+        display: flex;
+        gap: 20px;
+      }
+
+      .quote {
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      .author {
+        color: #777;
+        font-size: 14px;
+      }
+
+      /* USE CASES */
+      .usecases {
+        display: flex;
+        gap: 20px;
+      }
+
+      .use {
+        flex: 1;
+        background: #0a0a0a;
+        border: 1px solid #222;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .use img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .use div {
+        padding: 18px;
+      }
+
+      /* CHANGELOG */
+      .update {
+        border-left: 2px solid #222;
+        padding: 15px 0 15px 20px;
+        color: #aaa;
+      }
+
+      /* TEAM */
+      .team {
+        text-align: center;
+      }
+      .team img {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      /* FINAL CTA */
+      .final {
+        text-align: center;
+        border-top: 1px solid #111;
+      }
+
+      /* FOOTER */
+      footer {
+        border-top: 1px solid #111;
+        padding: 70px 0;
+      }
+
+      .foot {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .foot a {
+        display: block;
+        color: #777;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img src="/Images/icon.png" />
+          <h3>Cursor</h3>
+        </div>
+
+        <div class="links">
+          <span>Product</span>
+          <span>Enterprise</span>
+          <span>Pricing</span>
+          <span>Resources</span>
+        </div>
+
+        <div>
+          <span class="btn">Sign in</span>
+          <span class="btn primary">Download</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero container">
+      <h1>
+        Built to make you extraordinarily productive, Cursor is the best way to
+        code with AI.
+      </h1>
+      <p>
+        Write, edit, and ship code faster with an AI-native editor designed for
+        modern developers.
+      </p>
+
+      <div class="cta">
+        <div class="btn primary">Download for macOS</div>
+        <div class="btn">Try Agent</div>
+      </div>
+
+      <div class="preview">
+        <img src="/Images/Interface.png" />
+      </div>
+    </section>
+
+    <section class="trusted">
+      <div class="container">
+        <p>TRUSTED BY ENGINEERS AT</p>
+        <div class="logos">
+          <img src="/Images/logo2.png" />
+          <img src="/Images/logo3.png" />
+          <img src="/Images/logo4.png" />
+          <img src="/Images/logo5.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="feature">
+        <div>
+          <h2>Agents turn ideas into code</h2>
+          <p>
+            Delegate complex tasks to AI agents and focus on building great
+            products.
+          </p>
+        </div>
+        <div class="visual">
+          <img src="/Images/Agent_Ideas.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="feature reverse">
+        <div>
+          <h2>Magically accurate autocomplete</h2>
+          <p>
+            Predicts your next edit with deep understanding of your codebase.
+          </p>
+        </div>
+        <div class="visual">
+          <img src="/Images/Autocomplete.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="feature">
+        <div>
+          <h2>Collaborate seamlessly</h2>
+          <p>Review pull requests, chat with teammates, and ship faster.</p>
+        </div>
+        <div class="visual">
+          <img src="/Images/Collabrative.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Why developers love Cursor</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Best Models</h3>
+          <p>Switch between top AI models instantly.</p>
+        </div>
+        <div class="card">
+          <h3>Codebase Understanding</h3>
+          <p>Handles millions of lines of code effortlessly.</p>
+        </div>
+        <div class="card">
+          <h3>Enterprise Ready</h3>
+          <p>SOC2 compliant with strong security.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <div class="card">
+        <div class="quote">
+          "Cursor completely changed how our engineers ship code."
+        </div>
+        <div class="author">— Partner, Y Combinator</div>
+      </div>
+      <div class="card">
+        <div class="quote">"Every engineer is now AI-assisted."</div>
+        <div class="author">— CEO, NVIDIA</div>
+      </div>
+      <div class="card">
+        <div class="quote">"The autonomy slider is revolutionary."</div>
+        <div class="author">— Andrej Karpathy</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Use Cases</h2>
+      <div class="usecases">
+        <div class="use">
+          <img src="/Images/Use-case1.png" />
+          <div>Build production apps faster.</div>
+        </div>
+        <div class="use">
+          <img src="/Images/Use-case2.png" />
+          <div>Automate repetitive coding.</div>
+        </div>
+        <div class="use">
+          <img src="/Images/Use-cae3.png" />
+          <div>Collaborate with AI agents.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Changelog</h2>
+      <div class="update">
+        <strong>Jan 22, 2026</strong> — Subagents, Skills and Image Generation
+      </div>
+      <div class="update">
+        <strong>Oct 10, 2025</strong> — Reinforcement learning improvements
+      </div>
+      <div class="update">
+        <strong>May 02, 2024</strong> — Shadow Workspaces launched
+      </div>
+    </section>
+
+    <section class="container team">
+      <img src="/Images/icon.png" />
+      <h2>Built by engineers for engineers</h2>
+      <p style="width: 600px; margin: auto">
+        Cursor is crafted to help developers focus on what matters — building
+        exceptional software.
+      </p>
+    </section>
+
+    <section class="final">
+      <div class="container">
+        <h2>Try Cursor today</h2>
+        <div
+          class="btn primary"
+          style="margin-top: 20px; display: inline-block"
+        >
+          Download Now
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container foot">
+        <div>
+          <h3>Cursor</h3>
+          <p>AI-first code editor.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a>Agents</a>
+          <a>Security</a>
+          <a>Pricing</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a>Docs</a>
+          <a>Blog</a>
+          <a>Changelog</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a>Careers</a>
+          <a>Privacy</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a>Twitter</a>
+          <a>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
